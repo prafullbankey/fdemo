@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 import { Link } from 'react-router-dom'
@@ -7,9 +6,12 @@ const NavBar = () => {
     <div>
       <ul>
         <li><Link class="active" to="/">Home</Link></li>
-        <li><Link to="AboutPage">about</Link></li>
+        <li><Link to="/AboutPage">about</Link></li>
         <li><Link to="/Signup">Signup</Link></li>
         <li><Link to="/LoginPage">login</Link></li>
+       <li> <Link to="/ContactForm"> ContactPage</Link> </li>
+       <li> <Link to='/DashboardPage'></Link></li>
+        
         <li>
           <div>
 
@@ -19,7 +21,9 @@ const NavBar = () => {
     </button>
     <div class="dropdown-content">
       <Link to="/profileSettingPage">ProfileSettingPage</Link>
-      <Link to="/settingPage">SettingPage</Link>
+      <Link to="/settingPage">SettingPage</Link> 
+      <Link to="/LogOutPage">Logout</Link>
+   
      
     </div>
   </div> 
